@@ -389,9 +389,30 @@ body {
     font-size: var(--small-font-size);
 }
 
-
-
 /* end About section */
+/* TODO Skills section  --------------------------------------------------------------- */
+
+.skills-description {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.skills-description h3 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.skills-description p {
+    font-size: var(--normal-font-size);
+}
+
+.skills-info {
+    max-width: 100%;
+    display: flex;
+}
+
+/* end Skills section*/
 /* TODO header */
 
 /* end header */
