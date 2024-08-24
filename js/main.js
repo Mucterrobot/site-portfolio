@@ -20,3 +20,28 @@ modalCloseBtn.forEach((button, i) => {
         serviceModal[i].classList.remove("active");
     }) 
 })
+
+
+// portfolio section -modal
+
+const portfolioModals = document.querySelectorAll(".portfolio-modal");
+const imgCard = document.querySelectorAll(".img-card");
+const portfolioCloseBtn = document.querySelectorAll(".portfolio-clone-btn");
+
+
+const modalPortfolio = function (modalClick) {
+    portfolioModals[modalClick].classList.add("active");
+}
+
+imgCard.forEach((button, i) => {
+    button.addEventListener("click", function(){
+        modalPortfolio(i);
+    }) 
+})
+
+portfolioCloseBtn.forEach((button, i) => {
+    button.addEventListener("click", function(){
+        portfolioModals[i].classList.remove("active");
+    })
+})
+
