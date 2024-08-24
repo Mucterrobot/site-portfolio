@@ -45,3 +45,12 @@ portfolioCloseBtn.forEach((button, i) => {
     })
 })
 
+// адаптивное меню бургер
+
+const navMenuBtn = document.querySelector('.nav-menu-btn');
+const navMenu = document.querySelector('.nav-menu');
+
+navMenuBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+

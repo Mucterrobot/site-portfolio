@@ -864,6 +864,59 @@ body {
 /* TODO header */
 
 /* end header */
-/* TODO header */
+/* TODO адаптация */
+
+
 
 /* end header */
+
+@media screen and (max-width: 768px) {
+  /* Стили для планшетов */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--body-bg-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu-btn {
+    display: block;
+  }
+  .home-wrapper,
+  .about-wrapper,
+  .skills-info,
+  .services-list,
+  .portfolio-wrapper {
+    flex-direction: column;
+  }
+
+  .home-img,
+  .about-img,
+  .education,
+  .services-container,
+  .portfolio-img-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Стили для мобильных телефонов */
+  :root {
+    --small-font-size: 12px;
+    --normal-font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 10px;
+  }
+
+}
