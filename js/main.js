@@ -54,3 +54,18 @@ navMenuBtn.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
+// swapper Infinite loop
+
+var swiper = new Swiper(".client-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
